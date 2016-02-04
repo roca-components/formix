@@ -12,3 +12,4 @@ Getting Started
 * `npm install` downloads dependencies
 * `npm run compile` performs a one-time compilation, generating `dist/bundle.js`
 * `npm run dev` automatically recompiles while monitoring code changes
+* `npm run lint` checks code for stylistic consistency
