@@ -1,8 +1,9 @@
-ES6 seed
-========
+Web Components seed
+===================
 
-boilerplate infrastructure for transpiling JavaScript from ES6 (AKA ES2015) to
-ES5 using Babel and webpack
+template for custom elements
+
+based on [ES6 seed](https://github.com/FND/es6-seed)
 
 
 Getting Started
