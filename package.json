@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "webpack --progress --colors --watch",
+    "start": "webpack --progress --colors --watch",
     "compile": "webpack",
     "lint": "eslint --cache *.js src && echo ✓"
   },
