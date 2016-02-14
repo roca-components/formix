@@ -2,18 +2,11 @@
 
 // XXX: DEBUG; mocked for illustration purposes
 
-const DEFAULT_ITEMS = ["foo", "bar", "baz"];
-let userItems = [];
+let items = [];
 
 export default function http(method, uri, payload) {
-	userItems.push(payload.name[0]);
-
-	let items = DEFAULT_ITEMS.slice();
-	while(items.length && Math.random() > 0.5) {
-		let i = randomInt(0, items.length - 1);
-		items.splice(i);
-	}
-	items = items.concat(userItems);
+	items.push(payload.name[0]);
+	items.sort();
 
 	let html = `<form is="form-ix" action="http://example.org" method="post">
 				<input type="text" name="name">
