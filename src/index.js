@@ -1,8 +1,9 @@
 /*eslint-env browser */
-import MyElement from "./element";
+import Formix from "./element";
 
-export default MyElement;
+export default Formix;
 
-document.registerElement("my-element", {
-	prototype: MyElement.prototype
+document.registerElement("form-ix", {
+	prototype: Formix.prototype,
+	extends: "form"
 });

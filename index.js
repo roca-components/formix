@@ -1,3 +1,3 @@
-import MyElement from "./src";
+import Formix from "./src";
 
-export default MyElement;
+export default Formix;
