@@ -4,7 +4,9 @@
     "compile": "webpack",
     "lint": "eslint --cache *.js src && echo ✓"
   },
-  "dependencies": {},
+  "dependencies": {
+    "morphdom": "^1.1.2"
+  },
   "devDependencies": {
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.2",

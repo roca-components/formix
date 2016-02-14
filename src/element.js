@@ -1,4 +1,5 @@
 /*eslint-env browser */
+import morphdom from "morphdom";
 import http from "./http";
 
 export default class Formix extends HTMLFormElement {
@@ -15,7 +16,7 @@ export default class Formix extends HTMLFormElement {
 
 		http(method, uri, payload).
 			then(html => {
-				this.innerHTML = html;
+				morphdom(this, html);
 				this.refresh();
 			});
 			// TODO: error handling

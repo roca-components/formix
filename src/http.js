@@ -15,11 +15,13 @@ export default function http(method, uri, payload) {
 	}
 	items = items.concat(userItems);
 
-	let html = `<input type="text" name="name">
-			<button type="submit">add</button>
+	let html = `<form is="form-ix" action="http://example.org" method="post">
+				<input type="text" name="name">
+				<button type="submit">add</button>
 			<ul>` +
 			items.map(item => `<li>${item}</li>`).join("") +
-			"</ul>";
+			`</ul>
+			</form>`;
 
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
