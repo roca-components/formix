@@ -1,3 +1,3 @@
 import MyElement from "./src";
 
-module.exports = MyElement;
+export default MyElement;

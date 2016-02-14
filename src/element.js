@@ -1,3 +1,4 @@
+/*eslint-env browser */
 export default class MyElement extends HTMLElement {
 	createdCallback() {
 		let header = document.createElement("p");

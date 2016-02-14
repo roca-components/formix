@@ -1,3 +1,4 @@
+/*eslint-env browser */
 import MyElement from "./element";
 
 export default MyElement;
